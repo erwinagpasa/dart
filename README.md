@@ -1,7 +1,6 @@
-# dart
 Dart Programming
 
-Run: stagehand web-simple
+**Run:** stagehand web-simple
 
 Available generators:
   * console-full   - A command-line application sample.
