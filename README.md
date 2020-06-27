@@ -13,4 +13,4 @@ Available generators:
   * web-stagexl - A starting point for 2D animation and games.
 
 **Running Dart File**
-➜  folder/bin / dart main.dart
+  folder/bin/➜ dart main.dart
