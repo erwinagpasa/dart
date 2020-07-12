@@ -1,5 +1,5 @@
 void main(List<String> arguments) {
-  //Set is unordered, do not contain duplicates
+  //Set is unordered, does not contain duplicates
   Set<int> numbers = new Set<int>();
   numbers.add(1);
   numbers.add(2);
