@@ -12,5 +12,3 @@ Available generators:
   * web-simple - A web app that uses only core Dart libraries.
   * web-stagexl - A starting point for 2D animation and games.
 
-**Running Dart File**
-  folder/bin/➜ dart main.dart
