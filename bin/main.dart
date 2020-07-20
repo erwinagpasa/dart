@@ -1,7 +1,7 @@
 void main(List<String> arguments) {
-  EpicName();
+  add(2, 3); //Output 5
 }
 
-void EpicName() {
-  print('Hello world');
+void add(int num1, int num2) {
+  print(num1 + num2);
 }
