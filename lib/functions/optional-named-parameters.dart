@@ -1,17 +1,32 @@
 void main(List<String> arguments) {
-  add(2, 3); //output: 2 3 null
-  sample(5, num2: 6); //output: 5 6 null
-  sample(5, num2: 6, num3: 7); //output: 5 6 7
+  print('Caller from function one');
+  testOne(2); // Output 2 null
+
+  print('Caller from function two');
+  testTwo(4); // Output 4 null null
+
+  print('Another caller from function two');
+  testTwo(6, 7); // Output 6 7 null
+
+  print('Caller from function three');
+  //testThree(1, num2: 2, num3: 3);
+  testThree(1, num3: 2);
 }
 
-void add(int num1, [int num2, int num3]) {
+void testOne(int num1, [int num2]) {
+  print(num1);
+  print(num2);
+}
+
+void testTwo(int num1, [int num2, int num3]) {
   print(num1);
   print(num2);
   print(num3); //null
 }
 
-void sample(int num1, {int num2, int num3}) {
+//you need to specify the name parameter to the caller e.g. num3:93
+void testThree(int num1, {int num2, int num3}) {
   print(num1);
   print(num2);
-  print(num3); //null
+  print(num3);
 }
