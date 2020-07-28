@@ -9,7 +9,7 @@ void main(List<String> arguments) {
   // Factirial of 6
   // 6! = 6 * 5 * 4 * 3 * 2 * 1 = 720
 
-  int res = calculateFactorial(0);
+  int res = calculateFactorial(6);
   print(res);
 }
 
