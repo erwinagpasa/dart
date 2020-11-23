@@ -1,6 +1,5 @@
 class Dog {
-  //these are public your can access outside of the class
-  //these are object
+  //these object are public your can access outside of the class
   int age = 1;
   String name = 'Fiddo';
 
