@@ -1,9 +1,31 @@
-import 'package:dart/scope/introscope.dart';
+//import 'package:dart/scope/introscope.dart';
 
 void main(List<String> arguments) {
-  //Animal cat = Animal is  blueprint in class
-  //cat is a variable name
-  //Animal() the parentheses is called a constructor
-  //new Animal() creating a constructor and store in memory
-  Animal cat = new Animal('fluffy');
+  var a = 2; // Bit presentation 10
+  var b = 3; // Bit presentation 11
+
+  var result = (a & b);
+
+  print('(a & b) => ${result}');
+  //(a & b) => 2
+
+  result = (a | b);
+  print('(a | b) => ${result}');
+  //(a | b) => 3
+
+  result = (a ^ b);
+  print('(a ^ b) => ${result}');
+  //(a ^ b) => 1
+
+  result = (~b);
+  print('(~b) => ${result}');
+  //(~b) => -4
+
+  result = (a << b);
+  print('(a << b) => ${result}');
+  //(a << b) => 16
+
+  result = (a >> b);
+  print('(a >> b) => ${result}');
+  //(a >> b) => 0
 }
