@@ -1,31 +1,33 @@
-//import 'package:dart/scope/introscope.dart';
-
 void main(List<String> arguments) {
-  var a = 2; // Bit presentation 10
-  var b = 3; // Bit presentation 11
+  var a = 12;
+  var b = 3;
 
-  var result = (a & b);
+  a += b;
+  print('a+=b : ${a}'); //A += B is equivalent to A = A + B
+  //Output: a+=b : 15
 
-  print('(a & b) => ${result}');
-  //(a & b) => 2
+  a = 12;
+  b = 13;
+  a -= b; //is equivalent to 12-13
+  print('a-=b : ${a}');
+  //Output a-=b : -1
 
-  result = (a | b);
-  print('(a | b) => ${result}');
-  //(a | b) => 3
+  a = 12;
+  b = 13;
+  a *= b;
+  print("a*=b' : ${a}");
 
-  result = (a ^ b);
-  print('(a ^ b) => ${result}');
-  //(a ^ b) => 1
+  // ignore: omit_local_variable_types
+  double ax = 10;
+  //double b = 13;
+  ax /= 5;
+  // ignore: prefer_single_quotes
+  print("a/=b : ${ax}");
+  //Output a/=b : 2.0
 
-  result = (~b);
-  print('(~b) => ${result}');
-  //(~b) => -4
-
-  result = (a << b);
-  print('(a << b) => ${result}');
-  //(a << b) => 16
-
-  result = (a >> b);
-  print('(a >> b) => ${result}');
-  //(a >> b) => 0
+  a = 12;
+  b = 13;
+  a %= b;
+  print('a%=b : ${a}');
+//Output a%=b : 12
 }
