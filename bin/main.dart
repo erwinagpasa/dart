@@ -1,33 +1,24 @@
 void main(List<String> arguments) {
-  var a = 12;
-  var b = 3;
+//The && and || operators are used to combine expressions.
+//The && operator returns true only when both the conditions return true.
+//Let us consider the following expression:
 
-  a += b;
-  print('a+=b : ${a}'); //A += B is equivalent to A = A + B
-  //Output: a+=b : 15
+  var a = 10;
+  var result = (a < 10 && a > 5);
+  print(result);
+//In the above example, a<10 and a>5 are two expressions combined
+//by an && operator. Here, the first expression returns false.
+//However, the && operator requires both the expressions to return true.
+//So, the operator skips the second expression.
 
-  a = 12;
-  b = 13;
-  a -= b; //is equivalent to 12-13
-  print('a-=b : ${a}');
-  //Output a-=b : -1
-
-  a = 12;
-  b = 13;
-  a *= b;
-  print("a*=b' : ${a}");
-
-  // ignore: omit_local_variable_types
-  double ax = 10;
-  //double b = 13;
-  ax /= 5;
-  // ignore: prefer_single_quotes
-  print("a/=b : ${ax}");
-  //Output a/=b : 2.0
-
-  a = 12;
-  b = 13;
-  a %= b;
-  print('a%=b : ${a}');
-//Output a%=b : 12
+//---------------------------//
+//The || operator returns true if one of the expressions returns true. For example:
+  var b = 10;
+  var result2 = (b > 5 || b < 10);
+  print(result2);
+//In the above snippet, two expressions a>5 and a<10 are combined by a || operator.
+//Here, the first expression returns true. Since, the first expression returns true,
+//the || operator skips the subsequent expression and returns true.
+//Due to this behavior of the && and || operator, they are called as short-circuit
+//operators.
 }
